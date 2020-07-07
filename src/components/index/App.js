@@ -1,10 +1,24 @@
-import React, {Component} from 'react';
+/*
+ * @Author: wq
+ * @Date: 2020-07-07 09:10:06
+ * @LastEditors: wq
+ * @LastEditTime: 2020-07-07 10:34:20
+ * @Description: file content
+ * @FilePath: \laowang.github.io\src\components\index\App.js
+ */
+import React, { Component } from 'react';
 import './App.less';
-import {Button} from "antd";
+import { Button } from "antd";
 import menuList from './menuData'
-import {Menu, Switch, Divider} from 'antd';
+import { Menu, Switch, Divider } from 'antd';
+import bgImg from '../../assets/img/yanjinggirl.jpg'
 
-const {SubMenu} = Menu;
+const { SubMenu } = Menu;
+const appBg = {
+  backgroundImage: `url(${bgImg})`,
+  backgroundSize: 'cover'
+
+}
 
 class App extends Component {
   constructor(props) {
@@ -16,7 +30,7 @@ class App extends Component {
   }
 
   render() {
-    const {mode, theme} = this.state
+    const { mode, theme } = this.state
     return (
       <div className="App">
         <div className={'blog-header'}>
@@ -44,7 +58,7 @@ class App extends Component {
               }
             </Menu>
           </div>
-          <div className={'blog-right'}></div>
+          <div className={'blog-right'} style={appBg}>4444</div>
         </div>
       </div>
     )
