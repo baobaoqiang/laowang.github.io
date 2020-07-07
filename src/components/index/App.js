@@ -2,7 +2,7 @@
  * @Author: wq
  * @Date: 2020-07-07 09:10:06
  * @LastEditors: wq
- * @LastEditTime: 2020-07-07 10:34:20
+ * @LastEditTime: 2020-07-07 10:54:25
  * @Description: file content
  * @FilePath: \laowang.github.io\src\components\index\App.js
  */
@@ -16,7 +16,10 @@ import bgImg from '../../assets/img/yanjinggirl.jpg'
 const { SubMenu } = Menu;
 const appBg = {
   backgroundImage: `url(${bgImg})`,
-  backgroundSize: 'cover'
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundAttachment: 'fixed',
+  backgroundRepeat: 'no-repeat'
 
 }
 
@@ -58,7 +61,9 @@ class App extends Component {
               }
             </Menu>
           </div>
-          <div className={'blog-right'} style={appBg}>4444</div>
+          <div className={'blog-right'} style={appBg}>
+            <span>这是一个大光头</span>
+          </div>
         </div>
       </div>
     )
